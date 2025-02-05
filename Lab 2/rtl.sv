@@ -6,6 +6,6 @@ module Lab_2(
     output y
     );
     assign x = (~ c) ^ (a | b);
-    assign y = (a|b) & (~(a & b ) ^ (a | b ))
+    assign y = (a|b) & (~(a & b ) ^ (a | b ));
     
 endmodule
