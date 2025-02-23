@@ -1,13 +1,11 @@
-`timescale 1ns/1ps
-
 module lab4(
-    input a0,
-    input a1,
-    input b0,
-    input b1,
-    output r,
-    output g,
-    output b
+    input logic a0,
+    input logic a1,
+    input logic b0,
+    input logic b1,
+    output logic r,
+    output logic g,
+    output logic b
     );
     assign r = ((~b1 & ~b0) | (a1 & a0) | (a0 & ~b1) | (a1 & ~b1) | (a1 & b1 & ~b0));
     assign g = ((~a1 & ~a0) | (b1 & b0) | (~a1 & b1) | (~a1 & b0) | (~a0 & b1));
